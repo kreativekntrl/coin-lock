@@ -1,25 +1,12 @@
-import './App.scss';
+import "./App.scss";
+import Landing from "./pages/Landing";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="page-wrap">
-  <header className="page-header">
-    Header
-  </header>
-  <nav className="page-nav">
-    Nav
-  </nav>
-  <main className="page-main">
-    <article>
-    </article>
-  </main>
-  <aside className="page-sidebar">
-    Aside
-  </aside>
-  <footer className="page-footer">
-    Footer
-  </footer>
-</div>
+    <Routes>
+      <Route path="/homepage" element={<Landing />} />
+    </Routes>
   );
 }
 
